@@ -31,21 +31,22 @@ class Section extends AbstractContainer
      *
      * @var \PhpOffice\PhpWord\Style\Section
      */
-    private $style;
+    public $style;
 
+    public $elements;
     /**
      * Section headers, indexed from 1, not zero
      *
      * @var Header[]
      */
-    private $headers = array();
+    public $headers = array();
 
     /**
      * Section footers, indexed from 1, not zero
      *
      * @var Footer[]
      */
-    private $footers = array();
+    public $footers = array();
 
     /**
      * Create new instance
